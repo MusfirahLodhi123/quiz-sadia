@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+<body>
+    <body onload="nextQuestion()">
+        <div class="container">
+            <h2 id="timer">2:00</h2><br>
+            <h1>Quiz</h1><br>
+            <p id="ques"></p><br>
+           <div class="options"> <input onclick="target()" type="radio" value="1" name="option" >&nbsp;<label id="opt1"></label>
+            <br><br>
+    
+            <input onclick="target()" type="radio" value="2" name="option" >&nbsp;<label id="opt2"></label>
+            <br><br>
+    
+            <input onclick="target()" type="radio" value="3" name="option" >&nbsp;<label id="opt3"></label>
+            <br><br></div>
+    
+            <button id="btn" disabled onclick="nextQuestion()">Next</button>
+        </div>
+    </body>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </html>
+</body>
+</html>
